@@ -108,7 +108,7 @@ highlight {
     font-weight: 600;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 920px) {
     header, nav {
         flex-direction: column;
     } 
