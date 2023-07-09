@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#about-me"><img class="logo" src="assets/logo.png" alt=""></a>
+            <img class="toogle-navbar" src="assets/icon-menu.png" alt="" onclick="toogleNavbar()">
+        </div>
+        <nav id="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- about me section -->
+    <section class="about-me" id="about-me">
+        <div class="about-me-container">
+            <div class="intro-header-wrapper">
+                <span class="intro-header">Hello, my name is </span>
+                <span class="intro-header text-highlight">DEVITA</span>
+            </div>
+            <p class="intro">
+                I'm currently a last semester university student majoring in Computer Science and Statistics.
+                I'm a curious and dedicated learner who always eager to acquire new knowledge.
+                Excited for new challenges and opportunities to grow as a software engineer.
+            </p>
+        </div>
+        <img src="assets/profile-pic.png" alt="">
+    </section>
+
+    <!-- experience section -->
+    <div class="section-wrapper">
+        <section class="experience" id="experience">
+            <div class="tab-experience">
+                <div class="tab-active" id="tab-work-experience">
+                    <a class="tab-experience-item active" id="tab-work-experience-item" onclick="selectExperienceTab('work-experience')">
+                        work experience
+                    </a>
+                </div>
+                <div id="tab-organizational-experience">
+                    <a class="tab-experience-item" id="tab-organizational-experience-item" onclick="selectExperienceTab('organizational-experience')">
+                        organizational experience
+                    </a>
+                </div>
+            </div>
+
+            <div class="experience-item experience-item-active" id="item-work-experience">
+                <ul>
+                    <li>
+                        <p class="timeline-item-header">Backend Engineer Intern</p>
+                        <p class="timeline-item-subheader">Traveloka | August 2022 - December 2022</p>
+                        <p>
+                            I was part of the Consumer Lending Team, responsible for developing and maintaining services related 
+                            to loan collection and insurance for Traveloka PayLater. My role involves designing systems, creating 
+                            technical documentation, developing systems, and do bug fixing.
+                        </p>
+                        <span class="circle"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="experience-item" id="item-organizational-experience">
+                <ul>
+                    <li>
+                        <p class="timeline-item-header">Division Coordinator</p>
+                        <p class="timeline-item-subheader">HIMSTAT BINUS University | March 2020 - February 2022</p>
+                        <p>
+                            Learning, Resource, and Development Division Coordinator
+                        </p>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <p class="timeline-item-header">Activist</p>
+                        <p class="timeline-item-subheader">HIMSTAT BINUS University | March 2019 - February 2020</p>
+                        <p>
+                            Education & Technology Division
+                        </p>
+                        <span class="circle"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <!-- education section -->
+    <section class="education" id="education">
+        <p class="section-title">EDUCATION</p> 
+        <ul>
+            <li>
+                <p class="education-item-header">BINUS University</p>
+                <p class="education-item-subheader">Bachelor's Degree - Computer Science and Statistics | 2018 - present</p>
+                <p class="education-item-text">
+                    During my university years, I pursued a double major in Computer Science and Statistics. 
+                    I actively participated in a variety of activities, including competitions, student organizations, 
+                    mentoring, and leadership roles.
+                </p>
+                <p class="education-item-subheader">Achievement</p>
+                <div class="achievement-section">
+                    <div>
+                        <p>Semifinalis Big Data Challenge (BDC)</p>
+                        <p>Statistika Ria dan Festival Sains Data 2021</p>
+                        <div class="see-credential"><a href="https://binusianorg-my.sharepoint.com/personal/devita003_binus_ac_id/_layouts/15/guestaccess.aspx?share=ESeo0p3NEpxNhNFO2LmxsHUBLzDQ2NCuhLXiMmlSWhTJWg" target="_blank">
+                            See Credential <img src="assets/link.png" alt="">
+                        </a></div>
+                    </div>  
+                    <div>
+                        <p>10th Place for The ICPC Asia Jakarta Regional Contes </p>
+                        <p>ICPC | 18 December - 20 December 2020</p>
+                        <div class="see-credential"><a href="https://icpc.global/ICPCID/H1U67EY9BA8Z" target="_blank">
+                            See Credential <img src="assets/link.png" alt="">
+                        </a></div>
+                    </div>
+                    <div>
+                        <p>50th Place for Asia Jakarta - Indonesia National Contest</p>
+                        <p>ICPC | 28 November - 29 November 2020</p>
+                        <div class="see-credential"><a href="https://icpc.global/ICPCID/H1U67EY9BA8Z" target="_blank">
+                            See Credential <img src="assets/link.png" alt="">
+                        </a></div>
+                    </div>
+                </div>
+                <span class="circle"></span>
+            </li>
+            <li>
+                <p class="education-item-header">SMAK 2 BPK PENABUR Jakarta</p>
+                <p class="education-item-subheader">Science | 2015 - 2018</p>
+                <span class="circle"></span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- project section -->
+    <div class="section-wrapper">  
+        <section class="project" id="project">
+            <p class="section-title">PROJECT</p> 
+            <div class="project-item">
+                <img class ="project-image" src="assets/satellitix.png" alt="">
+                <div class="project-description-wrapper">
+                    <p class="project-title">SATELLITIX</p>
+                    <p class="project-description">
+                        SATELLITIX is a <highlight>web-based application</highlight> that provide 
+                        predictions of the <highlight>poverty index</highlight> or Persentase Penduduk Miskin based on 
+                        <highlight>satellite imagery</highlight> using the <highlight>deep learning</highlight> method 
+                        in Central Java. This website was developed by me as part of my thesis project using 
+                        <highlight>Python Streamlit</highlight>. SATELLITIX can be accessed via this 
+                        <a href="http://satellitix.streamlit.app" target="_blank">link</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="project-item project-even">
+                <img class ="project-image" src="assets/statcube.png" alt="">
+                <div class="project-description-wrapper">
+                    <p class="project-title">StatCube</p>
+                    <p class="project-description">
+                        StatCube is a <highlight>web-based</highlight> and <highlight>android mobile application</highlight> 
+                        that offers online courses related to statistics. This application was developed as a team project for the 
+                        Mobile Programming and Web Programming courses, where I contributed from <highlight>designing system</highlight>
+                        to <highlight>code implementation</highlight> for both the website and mobile application. 
+                        The source code for the website can be found on 
+                        <a href="https://github.com/extremebip/statcube-web" target="_blank">GitHub</a>, 
+                        and the mobile application code is also available on 
+                        <a href="https://github.com/extremebip/statcube-mob" target="_blank">Github</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img class ="project-image" src="assets/teman-nusa.png" alt="">
+                <div class="project-description-wrapper">
+                    <p class="project-title">TemanNusa</p>
+                    <p class="project-description">
+                        TemanNusa is a <highlight>web-based social media application</highlight> that allows users to connect with others 
+                        and find friends based on specific professional fields. I developed this application as part of my end-of-semester 
+                        examination for the Web Programming course, and the source code is available on 
+                        <a href="https://github.com/devitadev/teman-nusa" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="project-item project-even">
+                <img class ="project-image" src="assets/hayoo.png" alt="">
+                <div class="project-description-wrapper">
+                    <p class="project-title">Hayoo</p>
+                    <p class="project-description">
+                        Hayoo is a <highlight>mobile-based social media application</highlight> that allows users to chat with each other. 
+                        With its user-friendly interface and intuitive features, Hayoo enables individuals to connect and engage in 
+                        <highlight>real-time conversations</highlight> with other users. I created this application for my end-of-semester 
+                        examination in the Mobile Programming course, and the source code for this application is accessible on 
+                        <a href="https://github.com/devitadev/chat-apps-hayoo" target="_blank">Github</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img class ="project-image" src="assets/openread.png" alt="">
+                <div class="project-description-wrapper">
+                    <p class="project-title">OpenRead</p>
+                    <p class="project-description">
+                        OpenRead is a <highlight>web-based application</highlight> that allows users to read and publish their 
+                        written works online. I created this application with my team as part of our Software Engineering course project, 
+                        where I contributed to <highlight>system design</highlight> and <highlight>frontend code implementation</highlight>. 
+                        The source code for the OpenRead application can be accessed on 
+                        <a href="https://github.com/extremebip/OpenRead" target="_blank">Github</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="contact-wrapper">
+            <p class="contact-header">GET IN TOUCH</p>
+            <p class="contact-text">Have something to share or discuss? Please feel free to reach out to me through Linkedin, Github, or Email</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/devita-devita-467253234/" target="_blank">
+                    <img src="assets/icons8-linkedin-100.png" alt="">
+                </a>
+                <a href="https://github.com/devitadev" target="_blank">
+                    <img src="assets/icons8-github-100.png" alt="">
+                </a>
+                <a href="mailto: devitaa2012@gmail.com">
+                    <img src="assets/icons8-email-100.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/devita.devv_/" target="_blank">
+                    <img src="assets/icons8-instagram-100.png" alt="">
+                </a>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy <highlight>DEVITA</highlight> | 2023</p>
+        </footer>
+    </section>
+
+</body>
+<script src="javascript.js"></script>
+</html>
