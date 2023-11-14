@@ -78,7 +78,9 @@ nav a {
 }
 
 .toogle-navbar {
-    width: 36px;
+    width: 40px;
+    fill: var(--text-color);
+    margin-right: calc(5vw + 6px);
     display: none;
 }
 

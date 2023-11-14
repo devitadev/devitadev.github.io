@@ -14,12 +14,12 @@ section[class='contact'] {
 .contact-header {
     font-size: calc(0.5vw + 24px);
     font-weight: 600;
-    margin-bottom: calc(2vh + 20px);
 }
 
 .contact-text {
     font-size: calc(0.3vw + 16px);
     color: var(--secondary-text-color);
+    margin: calc(2vh + 20px) auto calc(2.5vh + 24px) auto;
 }
 
 .social-media {
@@ -29,17 +29,18 @@ section[class='contact'] {
     margin-top: calc(2vh + 20px);
 }
 
-.social-media img {
-    height: 40px;
+.social-media svg {
+    fill: var(--secondary-text-color);
+    height: 36px;
     margin: auto 16px;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
-.social-media img:hover {
+.social-media svg:hover {
     transform: translateY(-4px);
     background-image: radial-gradient(circle at center, var(--secondary-primary-color), #287a7b61);
-    box-shadow: 0px 0px 16px 2px var(--secondary-primary-color);
+    box-shadow: 0px 0px 18px 4px var(--secondary-primary-color);
 }
 
 footer {
